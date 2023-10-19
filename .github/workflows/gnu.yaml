@@ -12,7 +12,7 @@ jobs:
     if: ${{false}}
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - run: sudo apt update
     - run: sudo apt install -y libclang-9-dev
     - uses: dart-lang/setup-dart@v1
