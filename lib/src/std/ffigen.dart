@@ -915,6 +915,15 @@ class StdLibC {
               ffi.Int, ffi.Pointer<ffi.Void>, ffi.Size)>>('write');
   late final _write =
       _writePtr.asFunction<int Function(int, ffi.Pointer<ffi.Void>, int)>();
+
+  late final addresses = _SymbolAddresses(this);
+}
+
+class _SymbolAddresses {
+  final StdLibC _library;
+  _SymbolAddresses(this._library);
+  ffi.Pointer<ffi.NativeFunction<ffi.Int Function(ffi.Int)>> get close =>
+      _library._closePtr;
 }
 
 final class UnnamedStruct1 extends ffi.Struct {

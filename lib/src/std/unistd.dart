@@ -11,6 +11,9 @@ mixin StdUnistdMixin on PlatformLibC {
   @override
   int close(int fd) => std.close(fd);
   @override
+  ffi.Pointer<ffi.NativeFunction<ffi.Int Function(ffi.Int)>> get closePtr =>
+      std.addresses.close;
+  @override
   int dup(int oldfd) => std.dup(oldfd);
   @override
   int dup2(int oldfd, int newfd) => std.dup2(oldfd, newfd);

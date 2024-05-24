@@ -1,6 +1,10 @@
+import 'dart:ffi' as ffi;
+
 import 'platform.dart';
 
 void close(int fd) => platform.close(fd);
+ffi.Pointer<ffi.NativeFunction<ffi.Int Function(ffi.Int)>> get closePtr =>
+    platform.closePtr;
 int dup(int oldfd) => platform.dup(oldfd);
 int dup2(int oldfd, int newfd) => platform.dup2(oldfd, newfd);
 
@@ -82,6 +86,7 @@ int write(int fd, List<int> buffer) => platform.write(fd, buffer);
 
 mixin UnistdMixin {
   void close(int fd);
+  ffi.Pointer<ffi.NativeFunction<ffi.Int Function(ffi.Int)>> get closePtr;
   int dup(int oldfd);
   int dup2(int oldfd, int newfd);
   int execv(String path, List<String> args);

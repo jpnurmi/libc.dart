@@ -92,6 +92,9 @@ functions:
     # wordexp.h
     - "wordexp"
     - "wordfree"
+  symbol-address:
+    include:
+      - "close"
 macros:
   exclude:
     - ".*"
