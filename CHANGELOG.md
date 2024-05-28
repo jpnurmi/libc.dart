@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.6 (2024-05-28)
+
+## What's Changed
+* Disable default errno value test by @robert-ancell in https://github.com/canonical/stdlibc.dart/pull/115
+* Fix Mac Arm64 by @dcharkes in https://github.com/canonical/stdlibc.dart/pull/114
+* stat: add st_flags by @cbenhagen in https://github.com/canonical/stdlibc.dart/pull/110
+* Add `rename` and `renameat` functions by @brianquinlan in https://github.com/canonical/stdlibc.dart/pull/118
+* Add mkdir by @brianquinlan in https://github.com/canonical/stdlibc.dart/pull/123
+* Add support for the open "mode" parameter by @brianquinlan in https://github.com/canonical/stdlibc.dart/pull/121
+
+## New Contributors
+* @robert-ancell made their first contribution in https://github.com/canonical/stdlibc.dart/pull/115
+* @dcharkes made their first contribution in https://github.com/canonical/stdlibc.dart/pull/114
+* @cbenhagen made their first contribution in https://github.com/canonical/stdlibc.dart/pull/110
+* @brianquinlan made their first contribution in https://github.com/canonical/stdlibc.dart/pull/118
+
+**Full Changelog**: https://github.com/canonical/stdlibc.dart/compare/v0.1.5...v0.1.6
+
 ## 0.1.5 (2023-06-14)
 
 ## What's Changed
