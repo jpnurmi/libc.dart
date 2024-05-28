@@ -5,7 +5,7 @@ description: |
 homepage: https://github.com/ubuntu-flutter-community/stdlibc.dart
 repository: https://github.com/ubuntu-flutter-community/stdlibc.dart
 issue_tracker: https://github.com/ubuntu-flutter-community/stdlibc.dart/issues
-version: 0.1.5
+version: 0.1.6
 
 environment:
   sdk: ^3.0.0
