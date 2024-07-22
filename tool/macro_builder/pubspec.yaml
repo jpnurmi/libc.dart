@@ -2,7 +2,7 @@ name: macro_builder
 publish_to: 'none'
 
 environment:
-  sdk: '>=2.16.0 <3.0.0'
+  sdk: '<4.0.0'
 
 dependencies:
   analyzer: ^5.0.0
