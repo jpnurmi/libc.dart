@@ -10,7 +10,7 @@ on:
 jobs:
   ffigen:
     if: ${{false}}
-    runs-on: macos-11
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v3
     - uses: dart-lang/setup-dart@v1
