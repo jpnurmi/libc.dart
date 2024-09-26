@@ -9,7 +9,7 @@ on:
 
 jobs:
   analyzer:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     container:
       image: dart:stable
     steps:
@@ -18,7 +18,7 @@ jobs:
       - run: dart analyze --fatal-infos .
 
   format:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     container:
       image: dart:stable
     steps:
@@ -27,7 +27,7 @@ jobs:
       - run: dart format --set-exit-if-changed .
 
   pub:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     container:
       image: dart:stable
     steps:
